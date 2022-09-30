@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace csharp_ecommerce_db
 {
-    internal class Order
+    public class Order
     {
         public int OrderId { get; set; }
         public DateTime Date { get; set; }
@@ -27,12 +27,5 @@ namespace csharp_ecommerce_db
         //Orders
         public List<Product> Products { get; set; }
 
-
-        public Order(int id, DateTime date, double amount)
-        {
-            OrderId = id;
-            Date = date;
-            Amount = amount;
-        }
     }
 }

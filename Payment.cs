@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace csharp_ecommerce_db
 {
-    internal class Payment
+    public class Payment
     {
        
         public int PaymentId { get; set; }
@@ -15,16 +15,9 @@ namespace csharp_ecommerce_db
         public bool Status { get; set; }
 
         //Order
-        public string OrderId { get; set; }
+        public int OrderId { get; set; }
         public Order Order { get; set; }
 
-
-        public Payment(int id, DateTime date, double amount)
-        {
-            PaymentId = id;
-            Date = date;
-            Amount = amount;
-        }
     }
 
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace csharp_ecommerce_db
 {
-    internal class Product
+    public class Product
     {
         public int ProductId { get; set; }
         public string Name { get; set; }
@@ -16,12 +16,5 @@ namespace csharp_ecommerce_db
         //Orders
         public List<Order> Orders { get; set; }
 
-        public Product(int id, string name, string description, double price)
-        {
-            ProductId = id;
-            Name = name;
-            Description = description;
-            Price = price;
-        }
     }
 }
