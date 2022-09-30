@@ -19,7 +19,7 @@ namespace csharp_ecommerce_db
 
         // Employee
         public int EmployeeId { get; set; }
-        public Employee Employee { get; set; }
+        public Employee Employees { get; set; }
 
         // Payments
         public List<Payment> Payments { get; set; }
